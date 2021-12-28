@@ -7,7 +7,18 @@ const pageload = () => {
     let p = document.createElement("p")
     p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod, ligula et finibus aliquam, eros felis bibendum nunc, sed faucibus neque dolor at orci. Nunc aliquam vestibulum nibh, eget sodales dolor commodo nec. Duis vel ante at sem molestie ullamcorper. Suspendisse potenti. Curabitur pulvinar sem eu tellus suscipit, dapibus blandit orci vulputate. Nunc blandit diam sit amet vehicula iaculis. Nulla malesuada fermentum ipsum, sit amet pretium risus commodo non. Fusce suscipit nibh in quam pharetra, vulputate eleifend dui mattis. Donec eleifend faucibus risus, eu viverra nisi porttitor nec. Pellentesque sed erat vulputate, dictum orci vel, tempus sem"
     p.classList.add("copy")
+    let tabs = document.createElement("tabs")
+    let home = document.createElement("button")
+    home.textContent = "Home"
+    let contact = document.createElement("button")
+    contact.textContent = "Contact"
+    let menu = document.createElement("button")
+    menu.textContent = "Menu"
     let content = document.getElementById("content")
+    let header = document.createElement("header")
+    content.appendChild(header)
+    header.appendChild(tabs)
+    tabs.append(home,contact,menu)
     content.appendChild(h1)
     content.appendChild(img)
     content.appendChild(p)
