@@ -3,13 +3,14 @@ html, body {
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #35BD6B;
 }
 
 #content {
     width: 950px;
-    height: 100%;
+    flex-basis: 0%;
+    flex-grow: 100%;
     background-color: #4DC47C;
     flex-direction: column;
     display: flex;
@@ -28,6 +29,25 @@ h1 {
     box-shadow: azure 2px 2px;
     border-radius: 4px;
     text-shadow:black 3px 3px;
+}
+
+h2 {
+    width: 400px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    box-shadow: black 0px 4px;
+    text-shadow: azure 3px 3px;
+}
+
+img {
+    border-width: 10px;
+    border-color: azure;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: black 3px 3px;
 }
 
 .copy {
