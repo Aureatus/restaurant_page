@@ -10,8 +10,6 @@ const homepageload = () => {
     p.classList.add("copy")
     p.textContent = "Alex's Mint Plaza aims to introduce you to all things mint, delectable delights with one thing in common. From icecream to brownies, we have you covered. All of our products are minty fresh, both in time and in flavour."
     let content = document.getElementById("content")
-    let header = document.querySelector("header")
-    content.appendChild(header)
     content.appendChild(h1)
     content.appendChild(img)
     content.appendChild(p)

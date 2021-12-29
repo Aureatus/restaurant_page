@@ -25,8 +25,6 @@ const menupageload = () => {
     let imgCredit = document.createElement("p")
     imgCredit.textContent = "Images from unsplashed.com"
     let content = document.getElementById("content")
-    let header = document.querySelector("header")
-    content.appendChild(header)
     content.appendChild(h1)
     content.appendChild(milkshakeHeader)
     content.appendChild(milkshakeImg)
