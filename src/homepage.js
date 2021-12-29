@@ -1,12 +1,14 @@
 const homepageload = () => {
     let h1 = document.createElement("h1")
-    h1.textContent = "LOREM IPSUM DOLOR"
+    h1.textContent = "Alex's Mint Plaza"
     let img = document.createElement("img")
-    img.src = "https://i.picsum.photos/id/247/950/450.jpg?hmac=62HUPh9vGidtkQo9ER5Mp4Zjh0ugq6E8lapTZcNZTIk"
+    img.src = "beauty-in-leaves-4-1057701.jpg"
     img.alt = "Lorem Ipsum Image."
+    img.width = "850"
+    img.height = "500"
     let p = document.createElement("p")
-    p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod, ligula et finibus aliquam, eros felis bibendum nunc, sed faucibus neque dolor at orci. Nunc aliquam vestibulum nibh, eget sodales dolor commodo nec. Duis vel ante at sem molestie ullamcorper. Suspendisse potenti. Curabitur pulvinar sem eu tellus suscipit, dapibus blandit orci vulputate. Nunc blandit diam sit amet vehicula iaculis. Nulla malesuada fermentum ipsum, sit amet pretium risus commodo non. Fusce suscipit nibh in quam pharetra, vulputate eleifend dui mattis. Donec eleifend faucibus risus, eu viverra nisi porttitor nec. Pellentesque sed erat vulputate, dictum orci vel, tempus sem"
     p.classList.add("copy")
+    p.textContent = "Alex's Mint Plaza aims to introduce you to all things mint, delectable delights with one thing in common. From icecream to brownies, we have you covered. All of our products are minty fresh, both in time and in flavour."
     let content = document.getElementById("content")
     let header = document.querySelector("header")
     content.appendChild(header)
