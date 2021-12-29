@@ -1,4 +1,7 @@
 import { pageload } from "./pageload";
+import {homepageload} from "./homepage"
+import {contactpageload} from "./contactpage"
+import {menupageload} from "./menupage"
 pageload()
 
 const homeButton = document.getElementById("home")
@@ -6,13 +9,13 @@ const contactButton = document.getElementById("contact")
 const menuButton = document.getElementById("menu")
 
 homeButton.addEventListener("click", () => {
-    console.log("hi")
+    homepageload()
 })
 
 contactButton.addEventListener("click", () => {
-    console.log("hi")
+    contactpageload()
 })
 
 menuButton.addEventListener("click", () => {
-    console.log("hi")
+    menupageload()
 })

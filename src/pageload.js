@@ -25,6 +25,7 @@ const pageload = () => {
     content.appendChild(h1)
     content.appendChild(img)
     content.appendChild(p)
+    home.style.backgroundColor = "white"
 }
 
 export {pageload}
