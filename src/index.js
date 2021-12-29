@@ -8,23 +8,28 @@ const homeButton = document.getElementById("home")
 const contactButton = document.getElementById("contact")
 const menuButton = document.getElementById("menu")
 
+const removeFunction = () => {
+    let content = document.getElementById("content")
+    let header = document.querySelector("header")
+    let contentArray = Array.from(content.children)
+    contentArray.forEach(element => {
+        if (element === header) {
+            return
+        }
+        else element.remove()
+    })
+}
 homeButton.addEventListener("click", () => {
-    document.querySelector("h1").remove()
-    document.querySelector("img").remove()
-    document.querySelector("p").remove()
+    removeFunction()
     homepageload()
 })
 
 contactButton.addEventListener("click", () => {
-    document.querySelector("h1").remove()
-    document.querySelector("img").remove()
-    document.querySelector("p").remove()
+    removeFunction()
     contactpageload()
 })
 
 menuButton.addEventListener("click", () => {
-    document.querySelector("h1").remove()
-    document.querySelector("img").remove()
-    document.querySelector("p").remove()
+    removeFunction()
     menupageload()
 })
