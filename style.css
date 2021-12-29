@@ -4,59 +4,73 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(221, 221, 221);
+    background-color: #35BD6B;
 }
 
 #content {
     width: 950px;
     height: 100%;
-    background-color: lightsteelblue;
+    background-color: #4DC47C;
     flex-direction: column;
     display: flex;
     align-items: center;
 
 }
 h1 {
+    width: 500px;
+    text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: bold;
     font-size: 40px;
     margin: 20px;
-    background-color: lightgray;
-    box-shadow: lightcoral 2px 2px;
-    text-shadow:cornsilk 2px 2px;
+    background-color:#ACFCCC;
+    color: azure;
+    box-shadow: azure 2px 2px;
+    border-radius: 4px;
+    text-shadow:black 3px 3px;
 }
 
 .copy {
+    width: 80%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     margin: 30px;
-    background-color: lightgray;
-    box-shadow: lightcoral 2px 2px;
-    text-shadow: cornsilk 1px 1px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: black 2px 2px;
+    text-shadow: black 0.2px 0.2px;
 }
 
 header {
-    background-color:azure;
+    background-color:#02E85E;
     width: 950px;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 tabs {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px;
     font-weight: lighter;
-    background-color: pink;
-    padding: 15px;
-    border-color: royalblue;
+    background-color: azure;
+    padding: 10px 10px;
+    width: 100px;
+    text-align: center;
+    border-color: #02E85E;
     border-style: solid;
-    border-width: 2px;
-    border-radius: 8%;
+    border-width: 10%;
+    border-radius: 8% 8% 0% 0%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ACFCCC;
 }
