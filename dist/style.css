@@ -42,6 +42,15 @@ h2 {
     text-shadow: azure 3px 3px;
 }
 
+h3 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    color: black;
+    box-shadow: azure 0px 4px;
+}
+
 img {
     border-width: 10px;
     border-color: azure;
