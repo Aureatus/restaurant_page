@@ -21,7 +21,7 @@ const pageload = () => {
     let header = document.createElement("header")
     content.appendChild(header)
     header.appendChild(tabs)
-    tabs.append(home,contact,menu)
+    tabs.append(home,menu,contact)
     content.appendChild(h1)
     content.appendChild(img)
     content.appendChild(p)
